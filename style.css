@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(circle at top, #162447, #0b1221 55%, #070b14);
+  color: #f8f8ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.game-shell {
+  max-width: 860px;
+  width: 100%;
+  background: rgba(9, 15, 32, 0.85);
+  border: 1px solid #1f2b49;
+  border-radius: 18px;
+  padding: 24px;
+  box-shadow: 0 30px 70px rgba(4, 6, 12, 0.6);
+}
+
+h1 {
+  margin: 0 0 8px;
+  font-size: 2.2rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+header p {
+  margin: 0;
+  color: #c6d6ff;
+  font-size: 0.95rem;
+}
+
+.hud {
+  margin: 20px 0 12px;
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  font-weight: 600;
+  color: #99b4ff;
+}
+
+#game {
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid #1e2a46;
+  background: linear-gradient(180deg, #0c1228 0%, #091326 55%, #050914 100%);
+  display: block;
+}
+
+.status {
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+#message {
+  margin: 0;
+  color: #f9e7a7;
+}
+
+button {
+  background: #ff7a59;
+  border: none;
+  color: #081020;
+  font-weight: 700;
+  border-radius: 999px;
+  padding: 10px 22px;
+  cursor: pointer;
+  box-shadow: 0 12px 20px rgba(255, 122, 89, 0.35);
+}
+
+button:hover {
+  filter: brightness(1.05);
+}

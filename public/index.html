@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alien Invaders</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="game-shell">
+      <header>
+        <h1>Alien Invaders</h1>
+        <p>
+          Use <strong>←</strong> <strong>→</strong> to move, <strong>Space</strong> to
+          fire. Destroy the fleet before they land!
+        </p>
+      </header>
+      <section class="hud">
+        <div>Score: <span id="score">0</span></div>
+        <div>Wave: <span id="wave">1</span></div>
+        <div>Lives: <span id="lives">3</span></div>
+      </section>
+      <canvas id="game" width="760" height="520" aria-label="Space Invaders Game"></canvas>
+      <section class="status">
+        <p id="message">Press Space to start!</p>
+        <button id="restart" type="button">Restart</button>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
